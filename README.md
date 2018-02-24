@@ -1,7 +1,7 @@
 ### CUDA-Premium-Calculator
 ### Implementation on GPU with CUDA the Longstaff-Schwartz algorithm to compute American stock option prices.
 
-Read theory.pdf for the theoretical analysis
+Read [theory.pdf](https://github.com/Vn0m/CUDA-Premium-Calculator/raw/master/theory.pdf) for the theoretical analysis
 
 This program has been developped using Visual Studio 2013 with nVIDIA CUDA 7.5
 It has been succesfully working with an nVIDIA GTX 965M SLI configuration.
