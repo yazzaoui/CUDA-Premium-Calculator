@@ -1,0 +1,36 @@
+﻿Build started 07/01/2016 13:33:14.
+     1>Project "D:\Dev\CUDA_Premium\PremiumCalculator\PremiumCalculator.vcxproj" on node 2 (Build target(s)).
+     1>AddCudaCompileDeps:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I. /FIcuda_runtime.h /c D:\Dev\CUDA_Premium\PremiumCalculator\kernel.cu 
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\Venom\AppData\Local\Temp\tmpf62801a31a94452c9529a982a1189766.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\kernel.cu.obj "D:\Dev\CUDA_Premium\PremiumCalculator\kernel.cu"
+         
+         D:\Dev\CUDA_Premium\PremiumCalculator>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\kernel.cu.obj "D:\Dev\CUDA_Premium\PremiumCalculator\kernel.cu" 
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(68): warning : variable "l" was declared but never referenced
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(301): warning : taking the address of a temporary
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(312): warning : taking the address of a temporary
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(275): warning : variable "res" was declared but never referenced
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(68): warning : variable "l" was declared but never referenced
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(301): warning : taking the address of a temporary
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(312): warning : taking the address of a temporary
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(275): warning : variable "res" was declared but never referenced
+         kernel.cu
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(104): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Dev\CUDA_Premium\PremiumCalculator\Debug\PremiumCalculator.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Dev\CUDA_Premium\PremiumCalculator\Debug\PremiumCalculator.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Dev\CUDA_Premium\PremiumCalculator\Debug\PremiumCalculator.lib" /MACHINE:X86 Debug\kernel.cu.obj
+         PremiumCalculator.vcxproj -> D:\Dev\CUDA_Premium\PremiumCalculator\Debug\PremiumCalculator.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "D:\Dev\CUDA_Premium\PremiumCalculator\Debug\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "D:\Dev\CUDA_Premium\PremiumCalculator\Debug\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "D:\Dev\CUDA_Premium\PremiumCalculator\Debug\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart32_75.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart64_75.dll
+                 2 fichier(s) copié(s).
+     1>Done Building Project "D:\Dev\CUDA_Premium\PremiumCalculator\PremiumCalculator.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.42

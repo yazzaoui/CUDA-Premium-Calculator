@@ -1,0 +1,52 @@
+﻿Build started 12/01/2016 10:31:06.
+     1>Project "D:\Dev\CUDA_Premium\PremiumCalculator\PremiumCalculator.vcxproj" on node 2 (Rebuild target(s)).
+     1>CudaClean:
+         cmd.exe /C "C:\Users\youme\AppData\Local\Temp\tmpc3c525b23ab547f3a85122163032e48e.cmd"
+         "D:\Program Files\CUDA\toolkit\bin\nvcc.exe" -ccbin "D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"D:\Program Files\CUDA\toolkit\include" -I"D:\Program Files\CUDA\toolkit\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile   -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "D:\Dev\CUDA_Premium\PremiumCalculator\kernel.cu" -clean
+         
+         D:\Dev\CUDA_Premium\PremiumCalculator>"D:\Program Files\CUDA\toolkit\bin\nvcc.exe" -ccbin "D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"D:\Program Files\CUDA\toolkit\include" -I"D:\Program Files\CUDA\toolkit\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile   -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "D:\Dev\CUDA_Premium\PremiumCalculator\kernel.cu" -clean 
+         kernel.cu
+       AddCudaCompileDeps:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /DWIN64 /D_DEBUG /D_CONSOLE /D_MBCS /I"D:\Program Files\CUDA\toolkit\include" /I"D:\Program Files\CUDA\toolkit\bin" /I"D:\Program Files\CUDA\toolkit\include" /I. /FIcuda_runtime.h /c D:\Dev\CUDA_Premium\PremiumCalculator\kernel.cu 
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\youme\AppData\Local\Temp\tmp902e3563628649c69f0a6fea80cc3ed0.cmd"
+         "D:\Program Files\CUDA\toolkit\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"D:\Program Files\CUDA\toolkit\include" -I"D:\Program Files\CUDA\toolkit\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "D:\Dev\CUDA_Premium\PremiumCalculator\kernel.cu"
+         
+         D:\Dev\CUDA_Premium\PremiumCalculator>"D:\Program Files\CUDA\toolkit\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"D:\Program Files\CUDA\toolkit\include" -I"D:\Program Files\CUDA\toolkit\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "D:\Dev\CUDA_Premium\PremiumCalculator\kernel.cu" 
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(88): warning : variable "l" was declared but never referenced
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(428): warning : taking the address of a temporary
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(444): warning : taking the address of a temporary
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(389): warning : variable "res" was declared but never referenced
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(708): warning : transfer of control bypasses initialization of:
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(714): warning : transfer of control bypasses initialization of:
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(729): warning : transfer of control bypasses initialization of:
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(736): warning : transfer of control bypasses initialization of:
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(743): warning : transfer of control bypasses initialization of:
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(88): warning : variable "l" was declared but never referenced
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(428): warning : taking the address of a temporary
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(444): warning : taking the address of a temporary
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(389): warning : variable "res" was declared but never referenced
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(708): warning : transfer of control bypasses initialization of:
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(714): warning : transfer of control bypasses initialization of:
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(729): warning : transfer of control bypasses initialization of:
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(736): warning : transfer of control bypasses initialization of:
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(743): warning : transfer of control bypasses initialization of:
+         kernel.cu
+     1>D:/Dev/CUDA_Premium/PremiumCalculator/kernel.cu(134): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Dev\CUDA_Premium\PremiumCalculator\x64\Debug\PremiumCalculator.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Program Files\CUDA\toolkit\lib\x64" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Dev\CUDA_Premium\PremiumCalculator\x64\Debug\PremiumCalculator.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Dev\CUDA_Premium\PremiumCalculator\x64\Debug\PremiumCalculator.lib" /MACHINE:X64 x64\Debug\kernel.cu.obj
+         PremiumCalculator.vcxproj -> D:\Dev\CUDA_Premium\PremiumCalculator\x64\Debug\PremiumCalculator.exe
+       PostBuildEvent:
+         echo copy "D:\Program Files\CUDA\toolkit\bin\cudart*.dll" "D:\Dev\CUDA_Premium\PremiumCalculator\x64\Debug\"
+         copy "D:\Program Files\CUDA\toolkit\bin\cudart*.dll" "D:\Dev\CUDA_Premium\PremiumCalculator\x64\Debug\"
+         :VCEnd
+         copy "D:\Program Files\CUDA\toolkit\bin\cudart*.dll" "D:\Dev\CUDA_Premium\PremiumCalculator\x64\Debug\"
+         D:\Program Files\CUDA\toolkit\bin\cudart32_75.dll
+         D:\Program Files\CUDA\toolkit\bin\cudart64_75.dll
+                 2 fichier(s) copié(s).
+     1>Done Building Project "D:\Dev\CUDA_Premium\PremiumCalculator\PremiumCalculator.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:14.34
